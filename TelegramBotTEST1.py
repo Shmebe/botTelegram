@@ -22,6 +22,8 @@ def website(message):
 def get_user_info(message):
     if message.text == "id":
         bot.send_message(message.chat.id, f"your id - {message.from_user.id}", parse_mode='html')
+    elif message.text == "Andrew":
+        bot.send_message(message.chat.id, "Андрій крутий крабік")
     elif message.text == "photo":
         photo = open('photo.bmp', 'rb')
         bot.send_photo(message.chat.id, photo)
