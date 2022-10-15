@@ -14,7 +14,7 @@ def start(message):
 def website(message):
     markup = types.InlineKeyboardMarkup()
     markup.add(
-        types.InlineKeyboardButton("text on button", url="https://www.python.org/downloads/release/python-3108/"))
+        types.InlineKeyboardButton("text on button", url="https://github.com/Shmebe/botTelegram.git"))
     bot.send_message(message.chat.id, "website", reply_markup=markup)
 
 
