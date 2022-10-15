@@ -25,5 +25,5 @@ def get_user_info(message):
         bot.send_photo(message.chat.id, photo)
 
 
-#@bot.message_handler(content_types=[])
-#bot.polling(none_stop=True)
+@bot.message_handler(content_types=[])
+bot.polling(none_stop=True)
